@@ -201,5 +201,3 @@ And other more important benefits have also been realized:
 *  Support for raw values or interpolated values
 *  Support for raw, percentage or px-suffix values
 
-
-![](https://cloud.githubusercontent.com/assets/210413/20034148/49a4fb62-a382-11e6-9822-42b90dec69be.jpg)
