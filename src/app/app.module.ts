@@ -5,10 +5,14 @@ import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from './app.component';
+import { AboutComponent } from './about/about.component';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
