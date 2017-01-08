@@ -1,4 +1,18 @@
-# Angular Flex Kick Off
+# yuElevated
+
+yuElevated is a composition of svg graphics in flex enabled angular 2 shell with simple animations of components displayed in `<router-outlet></router-outlet>`
+
+#angular2 #svg #angular-flex #animations
+
+
+
+---
+
+the main purpose of the repo is to be a starting point for work on and with angular 2 animations and integration of svg in angular app.
+
+all wrapped in angular flex module cloned from [Angular Flex Kick Off]()
+
+---
 
 ## Angular-cli
 
