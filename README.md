@@ -2,7 +2,6 @@
 
 ![](https://raw.githubusercontent.com/rafszul/yuElevated/master/src/assets/IMNGN 23-12-16 6.49.59_cleaned.svg)
 
-yuElevated/src/assets/IMNGN 23-12-16 6.49.59_cleaned.svg
 
 yuElevated is a composition of svg graphics in flex enabled angular 2 shell with simple animations of components displayed in `<router-outlet></router-outlet>`
 
