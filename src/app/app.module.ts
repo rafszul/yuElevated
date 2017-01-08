@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from '@angular/material';
+
+import 'hammerjs';
 
 import { routes } from './app.routing';
 
@@ -21,6 +24,7 @@ import { DemoComponent } from './demo/demo.component';
     FormsModule,
     HttpModule,
     FlexLayoutModule.forRoot(),
+    imports: [MaterialModule.forRoot()],
     routes
   ],
   providers: [],
