@@ -24,7 +24,7 @@ import { DemoComponent } from './demo/demo.component';
     FormsModule,
     HttpModule,
     FlexLayoutModule.forRoot(),
-    imports: [MaterialModule.forRoot()],
+    MaterialModule.forRoot(),
     routes
   ],
   providers: [],
