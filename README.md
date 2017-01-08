@@ -1,6 +1,6 @@
 # yuElevated
 
-![](https://raw.githubusercontent.com/rafszul/yuElevated/src/assets/IMNGN 23-12-16 6.49.59_cleaned.svg)
+![](https://raw.githubusercontent.com/rafszul/yuElevated/master/src/assets/IMNGN 23-12-16 6.49.59_cleaned.svg)
 
 yuElevated/src/assets/IMNGN 23-12-16 6.49.59_cleaned.svg
 
