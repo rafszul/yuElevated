@@ -1,20 +1,20 @@
-<md-toolbar color="primary"><span>GameViewer</span><span class="spacer"></span><button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
-  <md-menu #menu="mdMenu"><button md-menu-item><md-icon>fingerprint</md-icon><span>Login</span></button><button md-menu-item disabled><md-icon>announcement</md-icon><span>Issues</span></button><button
-      md-menu-item><md-icon>notifications_off</md-icon><span>Disable alerts</span></button></md-menu>
-</md-toolbar>
-<md-tab-group>
-  <md-tab label="Gallery">
-    <md-card *ngFor="let yuElevatedSet of yuElevatedSets; let i = index"><img md-card-image src="{{ yuElevatedSet.img }}">
-      <md-card-content>
-        <p> { { yuElevatedSet.description } }
-        </p>
-      </md-card-content>
-      <md-card-actions><button md-button (click)="likeMe(i)"><i class="material-icons md-18" [class.red-color]="yuElevatedSet.liked == '1'">favorite</i>LIKE </button><button
-          md-button (click)="deleteMe(i)"><i class="material-icons md-18">delete</i>DELETE </button></md-card-actions>
-    </md-card>
-  </md-tab>
-  <md-tab label="Settings"></md-tab>
-</md-tab-group>
-<!--<h1>yuElevated</h1><p>is a composition of svg graphics in flex enabled angular 2 shell with simple animations of components displayed in router-outlet</p>#angular2 #svg #angular-flex #animations-->
-<!--<md-card><md-card-subtitle>#angular2 #svg #angular-flex #animations</md-card-subtitle><md-card-title>yuElevated</md-card-title><md-card-content><img md-card-image src="./assets/IMNGN 23-12-16 6.50.23_cleaned.svg"><p>is a composition of svg graphics in flex enabled angular 2 shell with simple animations of components displayed in router-outlet</p></md-card-content><md-card-actions><button md-button>LIKE</button><button md-button>SHARE</button></md-card-actions></md-card>-->
-<!--<md-card><md-card-header><img md-card-avatar src="./assets/IMNGN 23-12-16 6.47.23_cleaned.svg"><md-card-title>yuElevated</md-card-title><md-card-subtitle>#angular2 #svg #angular-flex #animations</md-card-subtitle></md-card-header><img md-card-lg-image src="./assets/IMNGN 23-12-16 6.50.23_cleaned.svg"><md-card-content><p>is a composition of svg graphics in flex enabled angular 2 shell with simple animations of components displayed in router-outlet</p></md-card-content></md-card>-->
+<h1>yuElevated</h1>
+<p>is a composition of svg graphics in flex enabled angular 2 shell with simple animations of components displayed in router-outlet</p>#angular2
+#svg #angular-flex #animations
+<md-card>
+  <md-card-subtitle>#angular2 #svg #angular-flex #animations</md-card-subtitle>
+  <md-card-title>yuElevated</md-card-title>
+  <md-card-content><img md-card-image src="./assets/IMNGN 23-12-16 6.50.23_cleaned.svg">
+    <p>is a composition of svg graphics in flex enabled angular 2 shell with simple animations of components displayed in router-outlet</p>
+  </md-card-content>
+  <md-card-actions><button md-button>LIKE</button><button md-button>SHARE</button></md-card-actions>
+</md-card>
+<md-card>
+  <md-card-header><img md-card-avatar src="./assets/IMNGN 23-12-16 6.47.23_cleaned.svg">
+    <md-card-title>yuElevated</md-card-title>
+    <md-card-subtitle>#angular2 #svg #angular-flex #animations</md-card-subtitle>
+  </md-card-header><img md-card-lg-image src="./assets/IMNGN 23-12-16 6.50.23_cleaned.svg">
+  <md-card-content>
+    <p>is a composition of svg graphics in flex enabled angular 2 shell with simple animations of components displayed in router-outlet</p>
+  </md-card-content>
+</md-card>
