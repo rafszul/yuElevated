@@ -10,17 +10,20 @@ import { firebaseConfig } from '../app/config/firebase.config';
 
 import 'hammerjs';
 
-import { routes } from './app.routing';
+import { AuthGuard } from './auth.service';
+import { routes } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { DemoComponent } from './demo/demo.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    DemoComponent
+    DemoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,7 @@ import { DemoComponent } from './demo/demo.component';
     routes,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

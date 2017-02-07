@@ -1,7 +1,20 @@
 {
-  "name": "angular-flex-kick-off",
-  "version": "0.0.0",
+  "name": "yuElevated",
+  "version": "1.0.0",
+  "author": "rafszul <rafszul@gmail.com> (http://rafszul.projekt-kreatywa.com/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/projekt-kreatywa/ngCameo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/projekt-kreatywa/ngCameo/issues"
+  },
+  "keywords": [
+    "angular2",
+    "firebase",
+    "material"
+  ],
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
@@ -16,7 +29,7 @@
     "@angular/common": "^2.3.1",
     "@angular/compiler": "^2.3.1",
     "@angular/core": "^2.3.1",
-    "@angular/flex-layout": "^2.0.0-beta.1",
+    "@angular/flex-layout": "^2.0.0-beta.4",
     "@angular/forms": "^2.3.1",
     "@angular/http": "^2.3.1",
     "@angular/material": "^2.0.0-beta.1",

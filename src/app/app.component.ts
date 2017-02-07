@@ -7,7 +7,12 @@ import { AngularFire, AuthProviders, AuthMethods,FirebaseListObservable } from '
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'app works!';
+
+  items: FirebaseListObservable<any>;
+  name: any;
+  msgVal: string = '';
 
 
 }
