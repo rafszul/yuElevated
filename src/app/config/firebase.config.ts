@@ -1,7 +1,7 @@
 export const firebaseConfig = {
-    apiKey: 'AIzaSyBCzOUN7-paczfuxP1y_iLAvai_aDwnb3g',
-    authDomain: 'tpv-coffee-project-team-app.firebaseapp.com',
-    databaseURL: 'https://tpv-coffee-project-team-app.firebaseio.com',
-    storageBucket: 'tpv-coffee-project-team-app.appspot.com',
-    messagingSenderId: '693774969155'
+    apiKey: 'AIzaSyBJ1yo1af7mLelpHeDpIKpVBPeQOJ8sYo4',
+    authDomain: 'yuelevated-8440c.firebaseapp.com',
+    databaseURL: 'https://yuelevated-8440c.firebaseio.com',
+    storageBucket: 'yuelevated-8440c.appspot.com',
+    messagingSenderId: '1061743881891'
 };

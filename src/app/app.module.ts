@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MdlModule } from 'angular2-mdl';
 
 import { AngularFireModule } from 'angularfire2';
 
@@ -29,7 +28,7 @@ import { DemoComponent } from './demo/demo.component';
     MaterialModule.forRoot(),
     FlexLayoutModule.forRoot(),
     routes,
-    MdlModule
+    AngularFireModule.initializeApp(/config/firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
