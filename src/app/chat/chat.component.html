@@ -1,3 +1,10 @@
 <p>
   chat works!
 </p>
+<h4>hey {{ name.auth.displayName }}! below you'll find 20 most recent messages</h4>
+<div class="chat-container" *ngFor="let item of items | async">
+  <a href="#">{{ name.auth.displayName }}</a>
+  <p>{{item.message}}</p>
+</div>
+<input type="text" id="message" *ngIf="name" placeholder="Chat here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal"
+/>
