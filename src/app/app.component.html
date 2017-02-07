@@ -1,61 +1,40 @@
-<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="3px" fxLayoutGap.xs="3px">
-  <div class="item item-1" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.46.43_cleaned.svg" alt="">
-  </div>
-  <div class="item item-2" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.47.23_cleaned.svg" alt="">
-  </div>
-  <div class="item item-3" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.49.31_cleaned.svg" alt="">
-  </div>
-  <div class="item item-4" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.49.59_cleaned.svg" alt="">
-  </div>
-  <div class="item item-5" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.50.13_cleaned.svg" alt="">
-  </div>
-  <!--<div class="item item-2" fxFlex="20%" fxFlexOrder="3">could be a social links section. it's third from top on mobile, and right on larger devices taking-up 20% of the width</div>
-  <div class="item item-3" fxFlex>-->
-  <!-- this is the navigation. it's second from top on mobile, and middle on larger devices taking-up the remaining width -->
-  <!--<p>this is the navigation. it's second from top on mobile, and middle on larger devices taking-up the remaining width</p>
-    <ul>
-      <li>
-        <a routerLink="about">about</a>
-      </li>
-      <li>
-        <a routerLink="demo">demo</a>
-      </li>
-      <li>
-        <a href="https://github.com/projekt-kreatywa/angular-flex-kick-off-basic" target="_blank">source</a>
-      </li>
-    </ul>
-  </div>-->
-</div>
-<!--<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
-  <div class="item item-4" fxFlex fxFlexOffset="50px" fxFlexOffset.xs="0">Item 4</div>
-  <div class="item item-5" fxFlex="200px">Item 5</div>
-</div>-->
-<div class="container" fxLayout fxLayout.xs="column" xFlexAlign="center" fxLayoutGap="5" fxLayoutGap.xs="5">
-  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
-    <div fxFlex="20%">
-      <img src="./assets/IMNGN 27-12-16 12.52.22_cleaned.svg" alt="">
-      <img src="./assets/IMNGN 27-12-16 12.52.4_cleaned.svg" alt="">
-      <img src="./assets/IMNGN 27-12-16 12.51.13_cleaned.svg" alt="">
-      <img src="./assets/IMNGN 27-12-16 12.47.23_cleaned.svg" alt="">
+<div class="container" fxLayout fxLayout.xs="column" xFlexAlign="center" fxLayoutGap="0px" fxLayoutGap.xs="0">
+  <!--<button mdl-button mdl-button-type="fab" (click)="mdlLayout1.toggleDrawer()">
+    <mdl-icon>add</mdl-icon>
+  </button>-->
+  <mdl-layout #mdlLayout1="mdlLayout">
+    <mdl-layout-header mdl-layout-header-transparent>
+      <mdl-layout-header-row>
+        <mdl-layout-title>yuElevated</mdl-layout-title>
+        <mdl-layout-spacer></mdl-layout-spacer>
+      </mdl-layout-header-row>
+    </mdl-layout-header>
+    <mdl-layout-drawer>
+      <div fxFlex>
+        <a routerLink="demo"><img src="./assets/IMNGN 23-12-16 6.46.43_cleaned.svg" alt="demo"></a>
+        <a routerLink="about"><img src="./assets/IMNGN 23-12-16 6.47.23_cleaned.svg" alt="about"></a>
+        <a href="https://github.com/rafszul/yuElevated" target="_blank"><img src="./assets/IMNGN 23-12-16 6.46.43_cleaned.svg" alt="source"></a>
+      </div>
+    </mdl-layout-drawer>
+    <!--<md-sidenav #sidenav mode="side" opened="true">
+    <div class="example-scrolling-content">
+      Lorem ipsum dolor sit amet, pede a libero aenean phasellus, lectus metus sint ut risus, fusce vel in pellentesque. Nisl rutrum
+      etiam morbi consectetuer tempor magna, aenean nullam nunc id, neque vivamus interdum sociis nulla scelerisque sem,
+      dolor id wisi turpis magna aliquam magna. Risus accumsan hac eget etiam donec sed, senectus erat mattis quam, tempor
+      vel urna occaecat cras, metus urna augue nec at. Et morbi amet dui praesent, nec eu at, ligula ipsum dui sollicitudin,
+      quis nisl massa viverra ligula, mauris fermentum orci arcu enim fringilla. Arcu erat nulla in aenean lacinia ullamcorper,
+      urna ante nam et sagittis, tristique vehicula nibh ipsum vivamus, proin proin. Porta commodo nibh quis libero amet.
+      Taciti dui, sapien consectetuer.
     </div>
-    <div fxFlex="80%">
+    <button md-mini-fab class="example-fab" (click)="sidenav.toggle()">
+    <md-icon>add</md-icon>
+  </button>
+  </md-sidenav>-->
+    <!--<div fxFlex="75%">-->
+    <mdl-layout-content fxFlex>
       <router-outlet></router-outlet>
-    </div>
-  </div>
+    </mdl-layout-content>
+  </mdl-layout>
+  <!--</div>-->
 </div>
-<md-toolbar>
-  <div class="item item-1" fxFlex="60%"></div>
-  <div class="item item-2" fxFlex="10%">
-    <a routerLink="demo">demo</a>
-  </div>
-  <div class="item item-3" fxFlex="10%">
-    <a routerLink="about">about</a></div>
-  <div class="item item-4" fxFlex="10%">
-    <a href="https://github.com/rafszul/yuElevated" target="_blank">source</a></div>
-  <div class="item item-5" fxFlex="10%"><a href="https://github.com/rafszul" target="_blank">made by</a></div>
-</md-toolbar>
+<!-- FAB button -->
