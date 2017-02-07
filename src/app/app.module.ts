@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AngularFireModule } from 'angularfire2';
+import { firebaseConfig } from '../app/config/firebase.config';
 
 import 'hammerjs';
 
@@ -28,7 +29,7 @@ import { DemoComponent } from './demo/demo.component';
     MaterialModule.forRoot(),
     FlexLayoutModule.forRoot(),
     routes,
-    AngularFireModule.initializeApp(/config/firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
