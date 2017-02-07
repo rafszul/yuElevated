@@ -9,11 +9,6 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class AboutComponent implements OnInit {
 
     ngOnInit() {
-  }
-
-items: FirebaseListObservable<any[]>;
-  constructor(af: AngularFire) {
-    this.items = af.database.list('/graphics');
 
   }
 

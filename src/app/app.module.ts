@@ -14,18 +14,21 @@ import 'hammerjs';
 import { routes } from './app.routing';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { DemoComponent } from './demo/demo.component';
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
+import { ChatComponent } from './chat/chat.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     AboutComponent,
     DemoComponent,
     LoginComponent,
-    HomeComponent
+    ChatComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,7 @@
-<p>
-  home works!
-</p>
+
+            <md-card *ngFor="let item of items | async">
+            <img md-card-image src="{{ item.img }}">
+            <md-card-content>
+                <p>{{ item.description }}</p>
+            </md-card-content>
+        </md-card>
