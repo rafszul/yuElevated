@@ -6,24 +6,26 @@ import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AngularFireModule } from 'angularfire2';
-import { firebaseConfig } from '../app/config/firebase.config';
+import { firebaseConfig } from './config/firebase.config';
 
 import 'hammerjs';
 
-import { AuthGuard } from './auth.service';
-import { routes } from './app.routes';
+// import { AuthGuard } from './auth.service';
+import { routes } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { DemoComponent } from './demo/demo.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     DemoComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import { LoginComponent } from './login/login.component';
     routes,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [AuthGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

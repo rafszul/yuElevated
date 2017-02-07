@@ -1,5 +1,17 @@
 
+            <md-card *ngFor="let item of items | async">
+            <img md-card-image src="{{ item.img }}">
+            <md-card-content>
+                <p>{{ item.description }}</p>
+            </md-card-content>
+        </md-card>
 
+    <!--<md-card *ngFor="let graphic of graphics | async">
+            <img md-card-image src="{{ graphic.img }}">
+            <md-card-content>
+                <p>{{ graphic.description }}</p>
+            </md-card-content>
+        </md-card>-->
 
 <!--<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
   <div class="item item-4" fxFlex fxFlexOffset="50px" fxFlexOffset.xs="0">

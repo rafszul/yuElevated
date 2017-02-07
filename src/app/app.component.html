@@ -1,10 +1,18 @@
+<md-toolbar>
+  <span>Application Title</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="header-toolbar-md"></span>
+
+  <span>Right Aligned Text</span>
+</md-toolbar>
+
 <div class="flex-container" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center center">
     <div class="flex-item">
-        <md-card>
-            <h1>
-                {{title}}
-            </h1>
-        </md-card>
+        <button md-button>
+                {{title}}</button>
+
+
     </div>
     <div class="flex-item">
     
@@ -18,11 +26,7 @@
 
     </div>
     <div class="flex-item">
-        <md-card>
-            <h1>
-                {{title}}
-            </h1>
-        </md-card>
+                <button md-button>{{title}}</button>
     </div>
 </div>
 

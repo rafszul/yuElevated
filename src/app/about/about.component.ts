@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+    ngOnInit() {
   }
+
+items: FirebaseListObservable<any[]>;
+  constructor(af: AngularFire) {
+    this.items = af.database.list('/graphics');
+
+  }
+
 
 }
