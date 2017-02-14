@@ -1,61 +1,48 @@
-<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="3px" fxLayoutGap.xs="3px">
-  <div class="item item-1" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.46.43_cleaned.svg" alt="">
-  </div>
-  <div class="item item-2" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.47.23_cleaned.svg" alt="">
-  </div>
-  <div class="item item-3" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.49.31_cleaned.svg" alt="">
-  </div>
-  <div class="item item-4" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.49.59_cleaned.svg" alt="">
-  </div>
-  <div class="item item-5" fxFlex="20%">
-    <img src="./assets/IMNGN 23-12-16 6.50.13_cleaned.svg" alt="">
-  </div>
-  <!--<div class="item item-2" fxFlex="20%" fxFlexOrder="3">could be a social links section. it's third from top on mobile, and right on larger devices taking-up 20% of the width</div>
-  <div class="item item-3" fxFlex>-->
-  <!-- this is the navigation. it's second from top on mobile, and middle on larger devices taking-up the remaining width -->
-  <!--<p>this is the navigation. it's second from top on mobile, and middle on larger devices taking-up the remaining width</p>
-    <ul>
-      <li>
-        <a routerLink="about">about</a>
-      </li>
-      <li>
-        <a routerLink="demo">demo</a>
-      </li>
-      <li>
-        <a href="https://github.com/projekt-kreatywa/angular-flex-kick-off-basic" target="_blank">source</a>
-      </li>
-    </ul>
-  </div>-->
-</div>
-<!--<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
-  <div class="item item-4" fxFlex fxFlexOffset="50px" fxFlexOffset.xs="0">Item 4</div>
-  <div class="item item-5" fxFlex="200px">Item 5</div>
-</div>-->
-<div class="container" fxLayout fxLayout.xs="column" xFlexAlign="center" fxLayoutGap="5" fxLayoutGap.xs="5">
-  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
-    <div fxFlex="20%">
-      <img src="./assets/IMNGN 27-12-16 12.52.22_cleaned.svg" alt="">
-      <img src="./assets/IMNGN 27-12-16 12.52.4_cleaned.svg" alt="">
-      <img src="./assets/IMNGN 27-12-16 12.51.13_cleaned.svg" alt="">
-      <img src="./assets/IMNGN 27-12-16 12.47.23_cleaned.svg" alt="">
-    </div>
-    <div fxFlex="80%">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
-<md-toolbar>
-  <div class="item item-1" fxFlex="60%"></div>
-  <div class="item item-2" fxFlex="10%">
-    <a routerLink="demo">demo</a>
-  </div>
-  <div class="item item-3" fxFlex="10%">
-    <a routerLink="about">about</a></div>
-  <div class="item item-4" fxFlex="10%">
-    <a href="https://github.com/rafszul/yuElevated" target="_blank">source</a></div>
-  <div class="item item-5" fxFlex="10%"><a href="https://github.com/rafszul" target="_blank">made by</a></div>
-</md-toolbar>
+<button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+    <button md-menu-item>
+    <md-icon>dialpad</md-icon>
+    <span>Redial</span>
+  </button>
+    <button md-menu-item disabled>
+    <md-icon>voicemail</md-icon>
+    <span>Check voicemail</span>
+  </button>
+    <button md-menu-item>
+    <md-icon>notifications_off</md-icon>
+    <span>Disable alerts</span>
+  </button>
+</md-menu>
+
+
+<md-grid-list cols="3">
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+    <md-grid-tile>
+        <img md-card-image src="../assets/IMNGN 23-12-16 6.46.43_cleaned.svg">
+    </md-grid-tile>
+</md-grid-list>
